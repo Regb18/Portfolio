@@ -1,0 +1,305 @@
+:root {
+    --reg-primary-color: rgb(145, 203, 251);
+    --reg-secondary-color: rgb(66, 148, 186);
+    --reg-highlight-color: rgb(250, 225, 120);
+
+    --reg-nav-toggler-color: var(--reg-highlight-color);
+    --reg-nav-toggler-glow: rgba(250, 225, 120, 0.55);
+
+    --reg-dark-color: #212121;
+    --reg-light-color: #deeefb;
+    --reg-background-color: rgba(250, 250, 250, 0.8);
+
+    --reg-title-font: 'Bebas Neue', sans-serif;
+    --reg-subtitle-font: 'Fira Sans', sans-serif;
+    --reg-heading-font: 'Bebas Neue', sans-serif;
+    --reg-body-font: 'Roboto', sans-serif;
+
+    --reg-font-size: 1.2rem;
+    --reg-font-weight: 400;
+    --reg-line-height: 1.5rem;
+    --reg-title-color: var(--cf-dark-color);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--reg-body-font);
+    font-size: var(--reg-font-size);
+    font-weight: var(--reg-font-weight);
+    line-height: var(--reg-line-height);
+    color: var(--reg-dark-color);
+    background: var(--reg-background-color);
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+/* Element Overrides */
+h6, .h6,
+h5, .h5,
+h4, .h4,
+h3, .h3,
+h2, .h2,
+h1, .h1 {
+    font-family: var(--reg-heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: var(--reg-title-color);
+}
+
+.btn-primary {
+    color: white !important;
+    background-color: var(--reg-secondary-color) !important;
+    border-color: var(--reg-secondary-color);
+}
+
+.btn-primary:hover {
+    filter: brightness(1.1) !important;
+    border-color: var(--reg-highlight-color);
+}
+
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    filter: brightness(1.1) !important;
+    border-color: var(--reg-primary-color);
+}
+
+.linkstyle {
+    color: var(--reg-secondary-color);
+    text-decoration: none;
+}
+
+.linkstyle:hover {
+    color: var(--reg-secondary-color);
+    filter: saturate(2);
+    text-decoration: underline;
+}
+
+/* Navbar Overrides */
+#mainNav {
+    background: var(--reg-dark-color);
+}
+
+#mainNav button {
+    border-color: var(--reg-highlight-color);
+}
+
+.navbar-toggler {
+    color: var(--reg-nav-toggler-glow);
+}
+
+.navbar-toggler-icon-reg {
+    color: var(--reg-nav-toggler-color);
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.5rem;
+}
+
+
+/* Footer Stuff */
+.footer-main {
+    background-color: var(--reg-dark-color);
+    color: var(--reg-light-color);
+}
+
+.footer-main a.socialicons {
+    color: var(--reg-secondary-color);
+    opacity: 1;
+}
+
+.socialicons {
+    font-size: 2rem;
+}
+
+.footer-main a.socialicons:hover {
+    color: var(--reg-highlight-color);
+    opacity: 1;
+    transition: color 0.25s ease-in;
+}
+
+/* Header Stuff */
+.mainHeader {
+    height: 200px;
+    background-image: url(/img/JillPrestonBanner_576.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-color: var(--reg-light-color);
+}
+
+/* -------- Example Alternate Header -------- */
+.mainHeader-alternate {
+    min-height: 200px;
+    background-image: url(/img/cityBG_2560.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.mainHeader-alternate > .mainHeader-content {
+    backdrop-filter: blur(1px) hue-rotate(-80deg) brightness(90%) contrast(150%) saturate(150%);
+    -webkit-backdrop-filter: blur(1px) hue-rotate(-80deg) brightness(90%) contrast(150%) saturate(150%);
+}
+
+@supports not (backdrop-filter: blur(1px)) {
+    .mainHeader-alternate > .mainHeader-content {
+        background-color: rgba(0, 37, 46, 0.6);
+    }
+}
+
+/* ----------- End Example ----------- */
+
+.mainHeader-wrapper {
+    padding-left: 1rem;
+}
+
+.mainTitle {
+    font-family: var(--reg-title-font);
+    font-size: 2.5rem;
+    line-height: 2rem;
+    color: var(--reg-dark-color);
+}
+
+.mainLogo {
+    height: .6em;
+}
+
+.subTitle {
+    font-family: var(--reg-subtitle-font);
+    font-size: .6rem;
+    line-height: 1rem;
+    font-weight: 300;
+    color: var(--reg-dark-color);
+    letter-spacing: .09rem;
+}
+
+/* Section Styles */
+.profilePic {
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.section-page {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.section-page:nth-child(even) {
+    background-color: var(--reg-light-color);    
+}
+
+.section-page:nth-child(odd) {
+    background-color: var(--reg-primary-color);
+}
+
+.devicons {
+    font-size: 4rem;
+
+}
+
+
+/* --------------- Media Queries --------------- */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .mainHeader {
+        height: 200px;
+        background-image: url(/img/JillPrestonBanner_767.jpg);
+    }
+
+    .mainTitle {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+
+
+    .subTitle {
+        font-size: .6rem;
+        line-height: 1rem;
+        letter-spacing: .09rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .mainHeader {
+        height: 300px;
+        background-image: url(/img/JillPrestonBanner_992.jpg);
+    }
+
+    .mainTitle {
+        font-size: 4.5rem;
+        line-height: 3.5rem;
+
+    }
+
+    .subTitle {
+
+        font-size: 1.2rem;
+        line-height: 1rem;
+        letter-spacing: .1rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .mainHeader {
+        height: 400px;
+        background-image: url(/img/JillPrestonBanner_1200.jpg);
+    }
+
+    .mainTitle {
+        font-size: 5.5rem;
+        line-height: 4.5rem;
+    }
+
+    .subTitle {
+        font-size: 1.5rem;
+        line-height: 1rem;
+        letter-spacing: .1rem;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .mainHeader {
+        height: 500px;
+        background-image: url(/img/JillPrestonBanner_2560.png);
+    }
+
+    .mainTitle {
+        font-size: 6.5rem;
+        line-height: 5.5rem;
+    }
+
+    .subTitle {
+        font-size: 1.8rem;
+        line-height: 1rem;
+        letter-spacing: .1rem;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
