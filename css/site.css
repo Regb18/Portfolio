@@ -131,6 +131,19 @@ h1, .h1 {
     transition: color 0.25s ease-in;
 }
 
+.footer-cta {
+    background-color: var(--reg-secondary-color);
+    width: 75%;
+    border-radius: 10px;
+}
+
+.footer-bg-cta {
+    background: linear-gradient(to bottom, var(--reg-background-color), var(--reg-background-color) 50%, var(--reg-dark-color) 50%, var(--reg-dark-color) 100%);
+    padding-bottom: 1.2rem;
+}
+
+
+
 /* Header Stuff */
 .mainHeader {
     height: 200px;
@@ -214,9 +227,37 @@ section {
     background-color: var(--reg-primary-color);
 }
 
+.section-page:nth-last-child(2) {
+    background-color: var(--reg-primary-color);
+}
+
+.section-page:last-child {
+    background-color: var(--reg-light-color);
+}
+
 .devicons {
     font-size: 4rem;
 
+}
+
+.section-cta {
+    background-color: var(--reg-dark-color);
+    color: var(--reg-light-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+.cta-arrow {
+    color: var(--reg-highlight-color);
+    font-size: 2rem;
+}
+
+.cta-arrow:hover {
+    color: var(--reg-highlight-color);
+    filter: brightness(1.2);
 }
 
 
@@ -261,6 +302,15 @@ section {
         line-height: 1rem;
         letter-spacing: .1rem;
     }
+
+    .section-cta {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+    
+    .cta-arrow {
+        font-size: 2.5rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -298,6 +348,15 @@ section {
         font-size: 1.8rem;
         line-height: 1rem;
         letter-spacing: .1rem;
+    }
+    
+    .section-cta {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    
+    .cta-arrow {
+        font-size: 4rem;
     }
 }
 
