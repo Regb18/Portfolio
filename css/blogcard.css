@@ -1,0 +1,47 @@
+.blog-article {
+    border-radius: 15px;
+    margin-top: 3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    overflow: hidden;
+}
+
+.blog-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.8);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.blog-image:hover {
+    transform: scale(1.1);
+}
+
+.blog-header {
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-date {
+    /* absolute puts it on top of anything, also locks location */
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    line-height: 3.5rem;
+    font-weight: bolder;
+    font-family: var(--reg-title-font);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.blog-day {
+    font-size: 6rem;
+}
+
+.blog-month {
+    font-size: 3rem;
+}
+
+.blog-article:nth-child(odd) > .blog-row {
+    flex-direction: row-reverse;
+}

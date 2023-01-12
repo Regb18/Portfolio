@@ -29,14 +29,14 @@
 
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/site.css" />
     <link rel="stylesheet" href="/css/hovercard.css" />
-
+    <link rel="stylesheet" href="css/blogcard.css" />
+    <link rel="stylesheet" href="/css/site.css" />
 </head>
 
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-smooth-scroll="true" tabindex="0">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container-xxl">
             <a class="navbar-brand" href="#">
                 <img src="/img/dw_signature_white.png" height="50" />
@@ -51,7 +51,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                        <a class="nav-link" aria-current="page" href="#Home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#About">About</a>
@@ -76,7 +76,7 @@
         </div>
     </nav>
 
-    <header class="container-xxl" id="Home">
+    <header class="container-xxl pt-5" id="Home">
         <div class="mainHeader">
             <div class="mainHeader-content h-100 w-100 d-flex justify-content-end align-items-center">
                 <div class="mainHeader-wrapper">
@@ -381,7 +381,121 @@
                 <i class="bi bi-arrow-left-square-fill"></i>
             </a>
         </section>
-        <section id="Blog" class="section-page"></section>
+        <section id="Blog" class="section-page">
+            <h1>Blog Section</h1>
+            <p>In this section I link all of my blog articles that I write about code. I like to share my knowledge and keep a record of some of the things I've learned.</p>
+            <!-- Blog Cards -->
+            <div class="d-flex flex-column align-items-center align-items-md-start" id="blogs">
+                <article class="blog-article mb-4 card">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img src="/img/Blog/Blog_FlyingGirl.jpg" class="blog-image" />
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month">JANUARY</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">MAKE SQL QUERIES FLY</h2>
+                                <p class="card-text line-clamp">
+                                    Fatback turducken andouille chicken shank. Rump meatloaf sirloin, tail strip steak pork loin ground round shoulder doner chislic corned beef jerky. Shoulder porchetta hamburger buffalo capicola. Shank chuck short loin, chicken buffalo prosciutto biltong swine salami turducken doner sausage ham. T-bone beef ham turkey tongue andouille fatback tenderloin boudin shankle spare ribs cow. Swine burgdoggen rump short loin corned beef. Tenderloin frankfurter doner, short ribs jowl burgdoggen corned beef brisket cupim t-bone ham shoulder ham hock spare ribs.
+                                </p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 1 day ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-article mb-4 card">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img src="/img/Blog/Blog_CodeTag.jpg" class="blog-image" />
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month">JANUARY</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">MAKE SQL QUERIES FLY</h2>
+                                <p class="card-text line-clamp">
+                                    Fatback turducken andouille chicken shank. Rump meatloaf sirloin, tail strip steak pork loin ground round shoulder doner chislic corned beef jerky. Shoulder porchetta hamburger buffalo capicola. Shank chuck short loin, chicken buffalo prosciutto biltong swine salami turducken doner sausage ham. T-bone beef ham turkey tongue andouille fatback tenderloin boudin shankle spare ribs cow. Swine burgdoggen rump short loin corned beef. Tenderloin frankfurter doner, short ribs jowl burgdoggen corned beef brisket cupim t-bone ham shoulder ham hock spare ribs.
+                                </p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 1 day ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-article mb-4 card">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img src="/img/Blog/Blog_Database.jpg" class="blog-image" />
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month">JANUARY</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">MAKE SQL QUERIES FLY</h2>
+                                <p class="card-text line-clamp">
+                                    Fatback turducken andouille chicken shank. Rump meatloaf sirloin, tail strip steak pork loin ground round shoulder doner chislic corned beef jerky. Shoulder porchetta hamburger buffalo capicola. Shank chuck short loin, chicken buffalo prosciutto biltong swine salami turducken doner sausage ham. T-bone beef ham turkey tongue andouille fatback tenderloin boudin shankle spare ribs cow. Swine burgdoggen rump short loin corned beef. Tenderloin frankfurter doner, short ribs jowl burgdoggen corned beef brisket cupim t-bone ham shoulder ham hock spare ribs.
+                                </p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 1 day ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-article mb-4 card">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img src="/img/Blog/Blog_DecisionRoad.jpg" class="blog-image" />
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month">JANUARY</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">MAKE SQL QUERIES FLY</h2>
+                                <p class="card-text line-clamp">
+                                    Fatback turducken andouille chicken shank. Rump meatloaf sirloin, tail strip steak pork loin ground round shoulder doner chislic corned beef jerky. Shoulder porchetta hamburger buffalo capicola. Shank chuck short loin, chicken buffalo prosciutto biltong swine salami turducken doner sausage ham. T-bone beef ham turkey tongue andouille fatback tenderloin boudin shankle spare ribs cow. Swine burgdoggen rump short loin corned beef. Tenderloin frankfurter doner, short ribs jowl burgdoggen corned beef brisket cupim t-bone ham shoulder ham hock spare ribs.
+                                </p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 1 day ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
         <section id="Contact" class="section-page">
             <div class="container">
                 <h1>Contact Me</h1>

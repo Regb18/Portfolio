@@ -24,6 +24,7 @@
 html,
 body {
     height: 100%;
+    /* overflow-y: auto; */
 }
 
 body {
@@ -108,7 +109,6 @@ h1, .h1 {
     vertical-align: middle;
     font-size: 1.5rem;
 }
-
 
 /* Footer Stuff */
 .footer-main {
@@ -259,6 +259,14 @@ section {
     color: var(--reg-highlight-color);
     filter: brightness(1.2);
 }
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
 
 
 /* --------------- Media Queries --------------- */
