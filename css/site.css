@@ -26,6 +26,8 @@
     --reg-secondary-color: rgb(158, 134, 56);
     --reg-highlight-color: rgb(233, 209, 112);
 
+    --reg-contact-box-shadow-color: rgba(250, 225, 120, .4);
+
     --reg-nav-toggler-color: var(--reg-highlight-color);
     --reg-nav-toggler-glow: rgba(250, 225, 120, 0.55);
 
@@ -306,7 +308,7 @@ section {
     background-color: var(--reg-background-color);
     color: var(--reg-dark-color);
     border-color: var(--reg-secondary-color);
-    
+    box-shadow: 0px 0px 0px 2px var(--reg-contact-box-shadow-color);
 }
 
 
