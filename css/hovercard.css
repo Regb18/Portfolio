@@ -15,7 +15,8 @@ same aspect ratio at all break points for best results.
     height: 225px;
     border-radius: 15px;
     padding: 1.5rem;
-    background: white;
+    /* changed background from white to black */
+    background: #212121;
     position: relative;
     display: flex;
     align-items: flex-end;
