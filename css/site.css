@@ -26,6 +26,8 @@
     --reg-secondary-color: rgb(158, 134, 56);
     --reg-highlight-color: rgb(233, 209, 112);
 
+    --reg-cta-highlight-color: rgb(68, 15, 15);
+
     --reg-contact-box-shadow-color: rgba(250, 225, 120, .4);
 
     --reg-nav-toggler-color: var(--reg-highlight-color);
@@ -104,6 +106,8 @@ h1, .h1 {
     border-color: var(--reg-primary-color);
 }
 
+/* Change Linkstyle Color or Just add Class to CTA */
+.lfdsk {
 .linkstyle {
     color: var(--reg-secondary-color);
     text-decoration: none;
@@ -137,7 +141,7 @@ h1, .h1 {
 
 /* Footer Stuff */
 .footer-main {
-    background-color: var(--reg-dark-color);
+    background-color: var(--reg-primary-color);
     color: var(--reg-light-color);
 }
 
@@ -151,7 +155,7 @@ h1, .h1 {
 }
 
 .footer-main a.socialicons:hover {
-    color: var(--reg-highlight-color);
+    color: var(--reg-dark-color);
     opacity: 1;
     transition: color 0.25s ease-in;
 }
@@ -163,7 +167,7 @@ h1, .h1 {
 }
 
 .footer-bg-cta {
-    background: linear-gradient(to bottom, var(--reg-background-color), var(--reg-background-color) 50%, var(--reg-dark-color) 50%, var(--reg-dark-color) 100%);
+    background: linear-gradient(to bottom, var(--reg-background-color), var(--reg-background-color) 50%, var(--reg-primary-color) 50%, var(--reg-primary-color) 100%);
     padding-bottom: 1.2rem;
 }
 
@@ -266,8 +270,8 @@ section {
 }
 
 .section-cta {
-    background-color: var(--reg-dark-color);
-    color: var(--reg-light-color);
+    background-color: var(--reg-secondary-color);
+    color: var(--reg-dark-color);
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 1rem;
@@ -276,12 +280,12 @@ section {
 }
 
 .cta-arrow {
-    color: var(--reg-highlight-color);
+    color: var(--reg-light-color);
     font-size: 2rem;
 }
 
 .cta-arrow:hover {
-    color: var(--reg-highlight-color);
+    color: var(--reg-cta-highlight-color);
     filter: brightness(1.2);
 }
 
@@ -310,7 +314,6 @@ section {
     border-color: var(--reg-secondary-color);
     box-shadow: 0px 0px 0px 2px var(--reg-contact-box-shadow-color);
 }
-
 
 
 /* --------------- Media Queries --------------- */
