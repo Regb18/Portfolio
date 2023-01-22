@@ -107,7 +107,7 @@ h1, .h1 {
 }
 
 /* Change Linkstyle Color or Just add Class to CTA */
-.lfdsk {
+
 .linkstyle {
     color: var(--reg-secondary-color);
     text-decoration: none;
