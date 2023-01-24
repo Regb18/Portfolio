@@ -109,12 +109,12 @@ h1, .h1 {
 /* Change Linkstyle Color or Just add Class to CTA */
 
 .linkstyle {
-    color: var(--reg-secondary-color);
+    color: var(--reg-cta-highlight-color);
     text-decoration: none;
 }
 
 .linkstyle:hover {
-    color: var(--reg-secondary-color);
+    color: rgb(75, 20, 20);
     filter: saturate(2);
     text-decoration: underline;
 }
