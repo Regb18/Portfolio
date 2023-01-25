@@ -109,15 +109,16 @@ h1, .h1 {
 /* Change Linkstyle Color or Just add Class to CTA */
 
 .linkstyle {
-    color: var(--reg-cta-highlight-color);
+    color: var(--reg-secondary-color);
     text-decoration: none;
 }
 
 .linkstyle:hover {
-    color: rgb(75, 20, 20);
+    color: var(--reg-secondary-color);
     filter: saturate(2);
     text-decoration: underline;
 }
+
 
 /* Navbar Overrides */
 #mainNav {
@@ -169,6 +170,10 @@ h1, .h1 {
 .footer-bg-cta {
     background: linear-gradient(to bottom, var(--reg-background-color), var(--reg-background-color) 50%, var(--reg-primary-color) 50%, var(--reg-primary-color) 100%);
     padding-bottom: 1.2rem;
+}
+
+.footer-logo {
+    height: 50px;
 }
 
 
@@ -287,6 +292,17 @@ section {
 .cta-arrow:hover {
     color: var(--reg-cta-highlight-color);
     filter: brightness(1.2);
+}
+
+.cta-linkstyle {
+    color: var(--reg-cta-highlight-color);
+    text-decoration: none;
+}
+
+.cta-linkstyle:hover {
+    color: rgb(75, 20, 20);
+    filter: saturate(2);
+    text-decoration: underline;
 }
 
 .line-clamp {
