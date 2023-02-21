@@ -75,12 +75,18 @@ footer {
 }
 
 /* Element Overrides */
-h6, .h6,
-h5, .h5,
-h4, .h4,
-h3, .h3,
-h2, .h2,
-h1, .h1 {
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
     font-family: var(--reg-heading-font);
     font-weight: 700;
     text-transform: uppercase;
@@ -199,13 +205,13 @@ h1, .h1 {
     background-size: cover;
 }
 
-.mainHeader-alternate > .mainHeader-content {
+.mainHeader-alternate>.mainHeader-content {
     backdrop-filter: blur(1px) hue-rotate(-80deg) brightness(90%) contrast(150%) saturate(150%);
     -webkit-backdrop-filter: blur(1px) hue-rotate(-80deg) brightness(90%) contrast(150%) saturate(150%);
 }
 
 @supports not (backdrop-filter: blur(1px)) {
-    .mainHeader-alternate > .mainHeader-content {
+    .mainHeader-alternate>.mainHeader-content {
         background-color: rgba(0, 37, 46, 0.6);
     }
 }
@@ -253,8 +259,9 @@ section {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
+
 .section-page:nth-child(even) {
-    background-color: var(--reg-light-color);    
+    background-color: var(--reg-light-color);
 }
 
 .section-page:nth-child(odd) {
@@ -275,7 +282,7 @@ section {
 }
 
 .section-cta {
-    background-color: var(--reg-secondary-color);
+    background-color: var(--reg-background-color);
     color: var(--reg-dark-color);
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -284,13 +291,15 @@ section {
     line-height: 1.2rem;
 }
 
+
 .cta-arrow {
-    color: var(--reg-light-color);
+    color: var(--reg-secondary-color);
     font-size: 2rem;
 }
 
 .cta-arrow:hover {
     color: var(--reg-cta-highlight-color);
+    transition: .4s;
     filter: brightness(1.2);
 }
 
@@ -378,10 +387,11 @@ section {
         font-size: 1.5rem;
         line-height: 1.7rem;
     }
-    
+
     .cta-arrow {
         font-size: 2.5rem;
     }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -421,12 +431,12 @@ section {
         line-height: 1rem;
         letter-spacing: .1rem;
     }
-    
+
     .section-cta {
         font-size: 2.5rem;
         line-height: 3rem;
     }
-    
+
     .cta-arrow {
         font-size: 4rem;
     }
