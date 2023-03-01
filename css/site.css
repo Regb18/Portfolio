@@ -340,6 +340,18 @@ section {
     box-shadow: 0px 0px 0px 2px var(--reg-contact-box-shadow-color);
 }
 
+.modal-area {
+    background-color: rgb(21, 21, 21);
+    color: var(--reg-secondary-color)
+}
+
+.modal-title {
+    color: var(--reg-secondary-color)
+}
+
+.modal-text {
+    color: var(--reg-dark-color)
+}
 
 /* --------------- Media Queries --------------- */
 

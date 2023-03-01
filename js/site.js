@@ -30,7 +30,7 @@ function displayBlogs(blogPosts, baseURL) {
         if (blogPost.imageData) {
             blogImage.setAttribute('src', `data:${blogPost.imageType};base64,${blogPost.imageData}`);
         } else {
-            blogImage.setAttribute('src', `${baseURL}img/DefaultBlogImage.png`);
+            blogImage.setAttribute('src', `${baseURL}img/DefaultBlogImage.jpg`);
         }
 
         imageDiv.appendChild(blogImage);
