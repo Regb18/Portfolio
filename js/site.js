@@ -53,7 +53,7 @@ function displayBlogs(blogPosts, baseURL) {
 
         let buttonLink = articleCard.querySelector('[data-blog="buttonLink"]');
         buttonLink.href = `${baseURL}Content/${blogPost.slug}`;
-
+        buttonLink.target = "_blank";
 
         let updateText = articleCard.querySelector('[data-blog="updated"]');
         let today = new Date();
